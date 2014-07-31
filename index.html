@@ -12,6 +12,8 @@
 
 		<link rel="stylesheet" href="css/reveal.min.css">
 		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.16/socket.io.min.js"></script>
 	</head>
 
 	<body>
@@ -23,6 +25,10 @@
 					<h2>Girl Develop It Summer of Open Source Fellowship</h2>
 					<h3>LeeAnn Kinney <a href="https://twitter.com/_leekinney">@_leekinney</a></h3>
 					<h3>Jim Smiley <a href="https://twitter.com/jimRsmiley">@jimRsmiley</a></h3>
+
+					<aside class="notes">
+					here's a test note
+					</aside>
 				</section>
 
 				<section>
@@ -141,7 +147,9 @@
 					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/socket.io.js', async: true },
+					{ src: 'plugin/notes-server/client.js', async: true }
 				]
 			});
 
